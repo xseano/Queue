@@ -27,7 +27,7 @@ class Queue: public LinkedList<T>
             cout << "--------" << endl;
         }
 
-        void remove(T data)
+        void dequeue(T data)
         {
             this->removeNode(data);
         }
@@ -36,8 +36,6 @@ class Queue: public LinkedList<T>
         {
             this->addNode(data);
         }
-
-        //void dequeue();
 };
 
 #endif

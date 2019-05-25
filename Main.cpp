@@ -23,8 +23,8 @@ int main()
 
     cout << "Removing 2.94 and 3.17 from the queue..";
 
-    QQ->remove(2.94);
-    QQ->remove(3.17);
+    QQ->dequeue(2.94);
+    QQ->dequeue(3.17);
     QQ->display();
 
     cout << "Lets add another 1.87..";
