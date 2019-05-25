@@ -1,4 +1,0 @@
-Main.o: Main.cpp Queue.h LinkedList.h LinkedList.cpp
-LinkedList.o: LinkedList.h LinkedList.cpp
-LinkedList.o: LinkedList.cpp
-Queue.o: Queue.h LinkedList.h LinkedList.cpp
