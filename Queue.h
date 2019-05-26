@@ -27,9 +27,9 @@ class Queue: public LinkedList<T>
             cout << "--------" << endl;
         }
 
-        void dequeue(T data)
+        void dequeue()
         {
-            this->removeNode(data);
+            this->removeNode(this->getHead());
         }
 
         void enqueue(T data)

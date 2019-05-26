@@ -21,10 +21,9 @@ int main()
     QQ->enqueue(3.64);
     QQ->display();
 
-    cout << "Removing 2.94 and 3.17 from the queue..";
+    cout << "Removing the head from the queue..";
 
-    QQ->dequeue(2.94);
-    QQ->dequeue(3.17);
+    QQ->dequeue();
     QQ->display();
 
     cout << "Lets add another 1.87..";
