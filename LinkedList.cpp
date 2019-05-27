@@ -377,14 +377,3 @@ std::vector<T> LinkedList<T>::reverseVector()
 
     return vec;
 }
-
-/**
- * @brief Return the data of the first element in the list
- *
- * @return <T> that represents the data in the head of the queue
- */
-template <typename T>
-T LinkedList<T>::getHead()
-{
-    return head<T>->data;
-}

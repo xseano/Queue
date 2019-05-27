@@ -14,7 +14,10 @@ class Queue: protected LinkedList<T>
 
         T peekFront()
         {
-            return this->getHead();
+            std::vector<T> list = this->toVector();
+            T top = list[0];
+
+            return top;
         }
 
         bool empty()
@@ -44,7 +47,10 @@ class Queue: protected LinkedList<T>
 
         void dequeue()
         {
-            this->removeNode(this->getHead());
+            std::vector<T> list = this->toVector();
+            T top = list[0];
+
+            this->removeNode(top);
         }
 
         void enqueue(T data)

@@ -30,8 +30,6 @@ class LinkedList
 
 		vector<T> toVector(); // return data in a vector (e.g. to print out)
 		vector<T> reverseVector(); // return reversed data in a vector
-    protected:
-        T getHead(); // obtain the first element in the list
 };
 
 #include "LinkedList.cpp"
