@@ -9,7 +9,7 @@ int main()
 {
     Queue<type>* QQ = new Queue<type>();
 
-    if (QQ->empty())
+    if (QQ->isEmpty())
     {
         cout << "\n--------\nNew Queue\n";
     }
@@ -33,7 +33,7 @@ int main()
     QQ->display();
 
     cout << "Wait.. how many times is 1.87 referenced in the queue?" << endl;
-    cout << "Looks like 1.87 has " << QQ->frequencyOf(1.87) << " occurences in the queue!" << endl;
+    cout << "Looks like 1.87 has " << QQ->getFrequencyOf(1.87) << " occurences in the queue!" << endl;
 
     return 0;
 }
