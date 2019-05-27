@@ -379,7 +379,7 @@ std::vector<T> LinkedList<T>::reverseVector()
 }
 
 /**
- * @brief Return the reversed list Node(s) to vector item(s)
+ * @brief Return the data of the first element in the list
  *
  * @return <T> that represents the data in the head of the queue
  */

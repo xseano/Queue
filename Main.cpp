@@ -9,7 +9,7 @@ int main()
 {
     Queue<type>* QQ = new Queue<type>();
 
-    if (QQ->isEmpty())
+    if (QQ->empty())
     {
         cout << "\n--------\nNew Queue\n";
     }
@@ -21,8 +21,10 @@ int main()
     QQ->enqueue(3.64);
     QQ->display();
 
-    cout << "Removing the head from the queue..";
+    cout << "What is the first item in the queue.." << endl;
+    cout << QQ->peekFront() << " is the first data sent to the queue." << endl;
 
+    cout << "Removing the head from the queue..";
     QQ->dequeue();
     QQ->display();
 
@@ -31,7 +33,7 @@ int main()
     QQ->display();
 
     cout << "Wait.. how many times is 1.87 referenced in the queue?" << endl;
-    cout << "Looks like 1.87 has " << QQ->getFrequencyOf(1.87) << " occurences in the queue!" << endl;
+    cout << "Looks like 1.87 has " << QQ->frequencyOf(1.87) << " occurences in the queue!" << endl;
 
     return 0;
 }

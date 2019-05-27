@@ -8,9 +8,24 @@
 #include "LinkedList.h"
 
 template <typename T>
-class Queue: public LinkedList<T>
+class Queue: protected LinkedList<T>
 {
     public:
+
+        T peekFront()
+        {
+            return this->getHead();
+        }
+
+        bool empty()
+        {
+            return this->isEmpty();
+        }
+
+        int frequencyOf(T data)
+        {
+            return this->getFrequencyOf(data);
+        }
 
         void display()
         {
